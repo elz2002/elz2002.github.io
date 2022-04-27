@@ -108,7 +108,7 @@ footer nav ul li a{
     color: white;
 }
 
-footer nav .info-contato li {
+footer nav .info-contato li{
     margin: 0 0 15px;
 }
 
@@ -132,7 +132,6 @@ footer nav .redes-sociais li a:hover img{
     transform: scale(1.2) translateY(-10px);
 }
 
-
 /* PAGINA INICIAL*/
 main .coluna{
     padding: 20px;
@@ -140,12 +139,12 @@ main .coluna{
 main .coluna section{
     border-bottom: 1px solid #d4e9ff;
     margin: 0 0 20px;
-    min-height: 47px;
+    min-height: 187px;
     color: var(--corTextSecundaria);
 }
 main .coluna section h2{
     font-size: 1.3rem;
-    margin: 0 0 13px;
+    margin: 0 0 15px;
 }
 main .coluna section p{
     font-size: 0.9rem;
@@ -154,7 +153,7 @@ main .coluna section p{
 }
 
 main .coluna section ul li{
-    margin: 0 0 05px;
+    margin: 0 0 12px;
 }
 main .coluna section ul li h3{
     font-size: 1.1rem;
@@ -202,6 +201,7 @@ label span{
 }
 .ativar-dark:checked ~ .dark-mode label span{
     background-color: var(--corBackgroundSecundaria);
+    /* margin-left: 21px; */
     transform: translateX(21px);
     transition: all ease .3s;
 }
@@ -213,7 +213,7 @@ label span{
     --corTextSecundaria: #fff;
 }
 .ativar-dark:checked ~ .dark-mode header{
-    background-color: var(--corBackgroundPrimaria);
+    background-color: var(--corBackgroundSecundaria);
 }
 .ativar-dark:checked ~ .dark-mode header .container{
     background-color: var(--corBackgroundDark);
@@ -222,13 +222,12 @@ label span{
     background-color: var(--corBackgroundDark);
 }
 .ativar-dark:checked ~ .dark-mode main{
-    background-color: var(--corBackgroundPrimaria);
+    background-color: var(--corBackgroundSecundaria);
 }
 
 @keyframes aumentarLargura{
     from{
         width: 0;
-
     }
     to{
         width: 100%;
@@ -245,7 +244,7 @@ label span{
 }
 
 /* MEDIA*/
-    
+   
 @media only screen and (min-width: 768px){
     .linha{
         display: flex;
@@ -257,7 +256,6 @@ label span{
     footer nav .redes-sociais{
         display: flex;
         justify-content: center;
-        
     }
     header{       
         padding: 30px 0 0;
@@ -278,7 +276,7 @@ label span{
     main .coluna section{
         /*border: 2px solid #d4e9ff;*/
         border: 2px solid transparent;
-        padding: 17px;
+        padding: 20px;
         position: relative;
     }
     main .coluna section span{
@@ -317,11 +315,9 @@ label span{
         text-align: center;
         display: initial;
     }
-
 }
 
 @media only screen and (min-width: 991px){
-
     header .coluna-direita {
         flex-basis: 70%;
     }
