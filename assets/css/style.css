@@ -263,6 +263,7 @@ label span{
     header .coluna img{
         max-width: 250px;
         border-radius: 100%;
+        justify-content: center;
     }
     .container{
         width: 100%;
